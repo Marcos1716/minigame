@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./logo.svg" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#html" class="scroll-link">html</a>
+              </li>
+              <li>
+                <a href="#css" class="scroll-link">css</a>
+              </li>
+              <li>
+                <a href="#js" class="scroll-link">javascript</a>
+              </li>
+              <li>
+                <a href="#react" class="scroll-link">react</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>scroll project</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+            neque sunt in? Id, necessitatibus quos quisquam distinctio
+            laudantium fugiat?
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+        </div>
+      </div>
+    </header>
+    <!-- HTML -->
+    <section id="html" class="section">
+      <div class="title">
+        <h2 class="title-html">&lt;Html&gt;</h2>
+      </div>
+
+      <div class="btn-container" data-id="html"></div>
+    </section>
+    <!-- CSS -->
+    <section id="css" class="section">
+      <div class="title">
+        <h2 class="title-css">css</h2>
+      </div>
+
+      <div class="btn-container" data-id="css"></div>
+    </section>
+    <!-- JS -->
+    <section id="js" class="section">
+      <div class="title">
+        <h2 class="title-javascript">javascript</h2>
+      </div>
+      <div class="btn-container" data-id="javascript"></div>
+    </section>
+
+    <!-- REACT -->
+    <section id="react" class="section">
+      <div class="title">
+        <h2 class="title-react">react</h2>
+      </div>
+
+      <div class="btn-container" data-id="react"></div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; backroads travel tours company
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

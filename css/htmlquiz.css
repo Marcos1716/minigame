@@ -1,0 +1,134 @@
+/* back button */
+.back-container {
+  display: inline-block;
+  margin: 2rem 0 0 2rem;
+}
+.back {
+  font-size: 1.5rem;
+}
+
+.section-quiz {
+  max-width: 50%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--clr-grey-5);
+  padding: 2rem 2.5rem;
+  color: var(--clr-white);
+  border-radius: 3px;
+  box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.267);
+}
+.heading {
+  text-transform: uppercase;
+}
+.heading span {
+  text-transform: capitalize;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: center;
+}
+.question-ans {
+  display: inline-block;
+  width: 6rem;
+
+  border-bottom: var(--clr-primary-1) 2px solid;
+  position: relative;
+  text-align: center;
+}
+
+.question-ans::before {
+  content: attr(data-before);
+  position: absolute;
+  transform: translateX(-50%);
+  top: -1.8rem;
+  font-size: 1.3rem;
+  color: var(--clr-red-dark);
+  font-weight: 700;
+}
+.question-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.question-text {
+  font-size: 1.2rem;
+}
+
+input:focus {
+  outline: 2px var(--clr-grey-2) solid;
+}
+.input-ans {
+  font-size: 1.2rem;
+  width: 40%;
+  color: var(--clr-primary-1);
+  font-family: var(--ff-primary);
+  border: none;
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+.input-ans::placeholder {
+  color: var(--clr-grey-5);
+}
+
+.btn-submit {
+  cursor: pointer;
+  border: none;
+  background-color: var(--clr-primary-1);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: var(--clr-white);
+  border-radius: 3px;
+  transition: var(--transition);
+}
+.btn-submit:hover {
+  background-color: var(--clr-primary-2);
+}
+
+/* buttons for category */
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.btn-category {
+  border: none;
+  cursor: pointer;
+
+  color: var(--clr-primary-1);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.btn-span {
+  display: inline-block;
+  border: 3px var(--clr-primary-4) solid;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.btn-highlight {
+  background-color: var(--clr-primary-2);
+  color: var(--clr-white);
+}
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+  .question-ans {
+    width: 30%;
+  }
+  .section-quiz {
+    max-width: 90%;
+  }
+  .input-ans {
+    width: 50%;
+  }
+}
